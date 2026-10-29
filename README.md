@@ -95,13 +95,16 @@ I think this animation makes a big difference because I wanted picking a movie t
 
 All the project code is in the `Movie_Night_Roulette_Documentation 2` folder in this repository.
 
+You need Python 3, Arduino IDE with the Espressif ESP32 board package installed through Boards Manager, and a USB data cable. Select your TTGO T-Display board and serial port in Arduino IDE. The firmware needs no extra Arduino libraries beyond the ESP32 core.
+
 Open `firmware/MovieNightRoulette/MovieNightRoulette.ino` from that folder in Arduino IDE and upload it to the ESP32. Then connect the board to your laptop using USB.
 
 Close Arduino Serial Monitor if it's open, because the Python server needs to access the same serial port.
 
-From the `Movie_Night_Roulette_Documentation 2` folder, run:
+From the repository root, run:
 
 ```bash
+cd "Movie_Night_Roulette_Documentation 2"
 python3 server.py
 ```
 
@@ -113,10 +116,12 @@ On a Mac, you can also run `Start Movie Night.command` as a shortcut.
 
 The web interface is in the `web` folder, and the Python server uses standard Python libraries without needing additional packages. The supplied server is designed for macOS/Linux.
 
+[Watch the demo video](https://www.youtube.com/watch?v=oWBVLA43PA4).
+
 ## Final result
 
 The part I enjoyed most was seeing something I physically built control a game on my laptop. It made me realize that something as simple as moving between menu options becomes a lot more complicated when you're working with actual sensors.
 
 I also liked that the project ended up being something I could genuinely imagine using with friends.
 
-I wrote more about my design process and technical challenges in my [Module 2 design documentation on Notion](https://app.notion.com/p/Module-2-3f35804c3855802c9766f99a3ee09156).
+I wrote more about my design process and technical challenges in my [Module 2 design documentation on Notion](https://smart-banjo-6d6.notion.site/Movie-Night-Roulette-3f35804c3855802c9766f99a3ee09156).

@@ -2,9 +2,7 @@
 
 A movie picker that makes choosing what to watch feel like a game. Use a **joystick** to select a genre, turn a **potentiometer** to set the movie's intensity, and press a **button** to spin for a recommendation.
 
-![Demo of Movie Night Roulette](media/demo.gif)
-
-*Add a short GIF of the working controller and movie reveal at `media/demo.gif`.*
+![Demo of Movie Night Roulette](../demo.gif)
 
 ## Hardware
 
@@ -30,6 +28,10 @@ The breadboard connections match the firmware. The potentiometer adds three wire
 
 Connect the joystick and potentiometer to **3.3 V** and **GND**, and share ground across the circuit. The button and joystick switch use internal pull-ups; their other switch terminals go to GND. Verify these assignments against your board and wiring.
 
+## Prerequisites
+
+Use a Mac or Linux computer with Python 3, Arduino IDE, the Espressif ESP32 board package installed through Boards Manager, and a USB data cable. Select the board/port corresponding to your TTGO T-Display in Arduino IDE. The firmware uses the ESP32 core without additional Arduino libraries; the Python bridge uses the standard library.
+
 ## Run the project
 
 1. Upload `firmware/MovieNightRoulette/MovieNightRoulette.ino` to the ESP32 T-Display in Arduino IDE (**115200 baud**).
@@ -53,5 +55,6 @@ The game contains 75 curated films, filters by five genres and five intensity le
 
 If the controller shows offline, check the USB port and close Serial Monitor. If the genre changes without moving the joystick, use **Center joystick**. If the knob doesn't change intensity, check its wiper wire and look at the raw `Pot` reading in the interface.
 
-**Project blog:** [add published blog link]  
-**Demo video:** [add video link]
+**Project blog:** [Movie Night Roulette design documentation](https://smart-banjo-6d6.notion.site/Movie-Night-Roulette-3f35804c3855802c9766f99a3ee09156)
+
+**Demo video:** [Watch the project demonstration](https://www.youtube.com/watch?v=oWBVLA43PA4)
