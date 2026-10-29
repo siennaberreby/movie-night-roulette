@@ -14,11 +14,11 @@ A movie picker that makes choosing what to watch feel like a game. Use a **joyst
 
 ### Circuit
 
-![Fritzing circuit wiring diagram](../media/Movie_Night_Roulette.png)
+![Fritzing circuit wiring diagram](../media/Movie_Night_Roulette_Breadboard.png)
 
-[Editable Fritzing sketch](../media/Movie_Night_Roulette.fzz) · [Wiring details and part credits](../media/wiring.md)
+[Editable Fritzing sketch](../media/Movie_Night_Roulette_Breadboard.fzz) · [Wiring details and part credits](../media/wiring.md)
 
-Component positions are illustrative. The connections match the firmware; 220 Ω is a suggested LED resistor value because the photo does not establish its value.
+The breadboard connections match the firmware. The potentiometer adds three wires: 3.3 V, GND, and its wiper to GPIO 13. The diagram uses a suggested 220 Ω LED resistor because the photo does not establish its value.
 
 | Component | ESP32 pin |
 |---|---|

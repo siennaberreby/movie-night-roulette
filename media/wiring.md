@@ -1,6 +1,6 @@
 # Movie Night Roulette circuit
 
-The PNG was exported from Fritzing's Breadboard view. Open `Movie_Night_Roulette.fzz` in Fritzing to edit the circuit; the custom parts are bundled inside it. This is a labeled connection diagram, with component positions simplified for readability rather than a breadboard hole placement guide. It matches `Movie_Night_Roulette_Documentation 2/firmware/MovieNightRoulette/MovieNightRoulette.ino`.
+Open `Movie_Night_Roulette_Breadboard.fzz` in Fritzing to edit the circuit; its parts are bundled inside it. The PNG and SVG show the same part SVGs and positions as the native sketch. This version follows the supplied breadboard reference, adding a potentiometer at the top with red (3.3 V), black (GND), and orange (wiper to GPIO 13) jumper wires. Breadboard row numbers increase downward in this orientation. It matches `Movie_Night_Roulette_Documentation 2/firmware/MovieNightRoulette/MovieNightRoulette.ino`.
 
 | Component terminal | ESP32 connection |
 | --- | --- |
@@ -19,4 +19,4 @@ The hardware photograph does not establish the LED resistor value. The diagram u
 
 ## Part credits
 
-The TTGO board uses the downloaded `ESP32-TTGO-T-DISPLAY.fzpz` part, whose embedded author is Peter Van Epp (vanepp in the Fritzing forums), dated November 15, 2020. Its original metadata and SVGs are preserved in the sketch. The labeled joystick, potentiometer, switch, LED/resistor assembly, buses, and annotation parts were created for this documentation with ChatGPT assistance. These simplified parts provide a wiring illustration; no PCB footprint or circuit simulation is claimed.
+The TTGO board uses the downloaded `ESP32-TTGO-T-DISPLAY.fzpz` part, whose embedded author is Peter Van Epp (vanepp in the Fritzing forums), dated November 15, 2020. The board SVG is preserved; its ground and 3.3 V connectors have internal buses added to represent their shared electrical connections. The breadboard, potentiometer, pushbutton, resistor, and LED graphics are adapted from the Fritzing core library, with orientation and LED lead geometry normalized for this diagram. The five-pin joystick illustration and annotations were created for this documentation with ChatGPT assistance. No PCB footprint or circuit simulation is claimed.

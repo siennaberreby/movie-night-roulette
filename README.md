@@ -18,11 +18,11 @@ The joystick X is connected to GPIO 39 and Y to GPIO 32, with its built-in switc
 
 **Fritzing circuit diagram:**
 
-![Fritzing wiring diagram for Movie Night Roulette](media/Movie_Night_Roulette.png)
+![Fritzing wiring diagram for Movie Night Roulette](media/Movie_Night_Roulette_Breadboard.png)
 
-[Download the editable Fritzing sketch](media/Movie_Night_Roulette.fzz) · [Wiring details and part credits](media/wiring.md)
+[Download the editable Fritzing sketch](media/Movie_Night_Roulette_Breadboard.fzz) · [Wiring details and part credits](media/wiring.md)
 
-The diagram follows the GPIO assignments in the firmware. Component positions are illustrative rather than a hole-by-hole copy of the breadboard photo. The LED resistor is shown as a suggested 220 Ω because its value cannot be read from the photo.
+The breadboard diagram follows the GPIO assignments in the firmware and includes the potentiometer’s three jumper wires: red to 3.3 V, black to ground, and orange from the wiper to GPIO 13. The LED resistor is shown as a suggested 220 Ω because its value cannot be read from the photo.
 
 ## How the code works
 
