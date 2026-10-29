@@ -16,7 +16,13 @@ I used a LilyGO TTGO ESP32 T-Display, breadboard, joystick, potentiometer, pushb
 
 The joystick X is connected to GPIO 39 and Y to GPIO 32, with its built-in switch on GPIO 33. The potentiometer uses GPIO 13, the button uses GPIO 2 and I connected an LED to GPIO 15 through a resistor. The joystick and potentiometer share 3.3V and ground. The button connects to ground and uses the ESP32's internal pull-up resistor.
 
-**Fritzing circuit diagram:** [Add diagram here]
+**Fritzing circuit diagram:**
+
+![Fritzing wiring diagram for Movie Night Roulette](media/Movie_Night_Roulette.png)
+
+[Download the editable Fritzing sketch](media/Movie_Night_Roulette.fzz) · [Wiring details and part credits](media/wiring.md)
+
+The diagram follows the GPIO assignments in the firmware. Component positions are illustrative rather than a hole-by-hole copy of the breadboard photo. The LED resistor is shown as a suggested 220 Ω because its value cannot be read from the photo.
 
 ## How the code works
 

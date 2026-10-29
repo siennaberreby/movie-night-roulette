@@ -14,9 +14,11 @@ A movie picker that makes choosing what to watch feel like a game. Use a **joyst
 
 ### Circuit
 
-![Fritzing breadboard diagram](media/circuit-fritzing.png)
+![Fritzing circuit wiring diagram](../media/Movie_Night_Roulette.png)
 
-*Replace with a Fritzing diagram checked against the final physical circuit.*
+[Editable Fritzing sketch](../media/Movie_Night_Roulette.fzz) · [Wiring details and part credits](../media/wiring.md)
+
+Component positions are illustrative. The connections match the firmware; 220 Ω is a suggested LED resistor value because the photo does not establish its value.
 
 | Component | ESP32 pin |
 |---|---|
