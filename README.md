@@ -4,19 +4,19 @@ I made Movie Night Roulette because choosing a movie with friends can take forev
 
 The controller uses an ESP32, a joystick, a potentiometer and a button. Moving the joystick changes the genre (comedy, romance, thriller, drama or action), turning the potentiometer changes the intensity from 1 to 5, and pressing the button spins for a movie. I put together a list of 75 movies for the game. It also keeps track of movies it's already picked during the session so you don't keep getting the same one.
 
-![Movie Night Roulette in action](media/demo.gif)
+![Movie Night Roulette in action](demo.gif)
 
 ## The setup
 
 Here's what my actual circuit looked like:
 
-![My breadboard setup](media/hardware.jpg)
+![My breadboard setup](hardware.jpg)
 
-I used a LilyGO TTGO ESP32 T-Display, breadboard, joystick, potentiometer, pushbutton, jumper wires and USB cable.
+I used a LilyGO TTGO ESP32 T-Display, breadboard, joystick, potentiometer, pushbutton, jumper wires and a USB cable.
 
 The joystick X is connected to GPIO 39 and Y to GPIO 32, with its built-in switch on GPIO 33. The potentiometer uses GPIO 13, the button uses GPIO 2 and I connected an LED to GPIO 15 through a resistor. The joystick and potentiometer share 3.3V and ground. The button connects to ground and uses the ESP32's internal pull-up resistor.
 
-**Fritzing circuit diagram:** I'll add the digital wiring diagram here.
+**Fritzing circuit diagram:** [Add diagram here]
 
 ## How the code works
 
@@ -61,7 +61,7 @@ if (now - changed >= 35 && raw != pressed) {
 
 Instead of sending only whether the button is being held down, Arduino counts the presses. The JavaScript code then checks whether that count has increased to trigger a new spin.
 
-The potentiometer was another component I had trouble with. At one point the reading was stuck at zero, so I had to check the sensor values separately from the website to figure out where the issue was happening.
+The potentiometer was another component I had trouble with. At one point the reading was stuck at zero, so I had to check the sensor values separately from the website to understand where the problem was happening.
 
 I also added smoothing to the Arduino code:
 
@@ -87,11 +87,13 @@ I think this animation makes a big difference because I wanted picking a movie t
 
 ## How to run it
 
-The Arduino code is in `firmware/MovieNightRoulette/MovieNightRoulette.ino`. Upload it to the ESP32 using Arduino IDE, then connect the board to the laptop using USB.
+All the project code is in the `Movie_Night_Roulette_Documentation 2` folder in this repository.
+
+Open `firmware/MovieNightRoulette/MovieNightRoulette.ino` from that folder in Arduino IDE and upload it to the ESP32. Then connect the board to your laptop using USB.
 
 Close Arduino Serial Monitor if it's open, because the Python server needs to access the same serial port.
 
-From the project folder, run:
+From the `Movie_Night_Roulette_Documentation 2` folder, run:
 
 ```bash
 python3 server.py
@@ -103,9 +105,7 @@ http://127.0.0.1:8765
 
 On a Mac, you can also run `Start Movie Night.command` as a shortcut.
 
-The web interface is in the `web` folder and the Python server uses standard Python libraries without needing additional packages. The supplied server is designed for macOS/Linux.
-
-The code is currently inside the `Movie_Night_Roulette_Documentation 2` folder in this repository.
+The web interface is in the `web` folder, and the Python server uses standard Python libraries without needing additional packages. The supplied server is designed for macOS/Linux.
 
 ## Final result
 
