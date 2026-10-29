@@ -18,7 +18,7 @@ The joystick X is connected to GPIO 39 and Y to GPIO 32, with its built-in switc
 
 **Fritzing circuit diagram:**
 
-![Fritzing wiring diagram for Movie Night Roulette](media/Movie_Night_Roulette_Breadboard.png)
+![Fritzing wiring diagram for Movie Night Roulette](media/Movie_Night_Roulette_Breadboard_clean.png)
 
 [Download the editable Fritzing sketch](media/Movie_Night_Roulette_Breadboard.fzz) · [Wiring details and part credits](media/wiring.md)
 

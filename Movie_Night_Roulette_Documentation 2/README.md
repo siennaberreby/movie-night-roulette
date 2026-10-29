@@ -14,7 +14,7 @@ A movie picker that makes choosing what to watch feel like a game. Use a **joyst
 
 ### Circuit
 
-![Fritzing circuit wiring diagram](../media/Movie_Night_Roulette_Breadboard.png)
+![Fritzing circuit wiring diagram](../media/Movie_Night_Roulette_Breadboard_clean.png)
 
 [Editable Fritzing sketch](../media/Movie_Night_Roulette_Breadboard.fzz) · [Wiring details and part credits](../media/wiring.md)
 
